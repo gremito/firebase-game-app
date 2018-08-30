@@ -1,0 +1,25 @@
+<!-- Copyright (C) 2018 Google Inc. All Rights Reserved.
+
+FirebaseFunctions iOS and Android Dependencies.
+-->
+
+<dependencies>
+  <iosPods>
+    <iosPod name="Firebase/Functions" version="5.5.0" minTargetSdk="8.0">
+    </iosPod>
+  </iosPods>
+  <androidPackages>
+    <androidPackage spec="com.google.firebase:firebase-functions:16.1.0">
+    </androidPackage>
+    <androidPackage spec="com.google.firebase:firebase-core:16.0.1">
+    </androidPackage>
+    <androidPackage spec="com.google.firebase:firebase-iid:[17.0.0]">
+    </androidPackage>
+    <androidPackage spec="com.google.firebase:firebase-functions-unity:5.2.1">
+      <repositories>
+        <repository>Assets/Firebase/m2repository</repository>
+      </repositories>
+    </androidPackage>
+  </androidPackages>
+</dependencies>
+
