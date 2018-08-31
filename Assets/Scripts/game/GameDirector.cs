@@ -11,6 +11,8 @@ public class GameDirector : MonoBehaviour
 	public const int TIME_MAX = 15;
 	
 	[SerializeField] private Canvas gameOverScene;
+	[SerializeField] private Text getPointShow;
+
 	[SerializeField] private Text userPointText;
 	[SerializeField] private Text gameTimeText;
 	
@@ -29,6 +31,7 @@ public class GameDirector : MonoBehaviour
 		gameTime = TIME_MAX;
 		gameNow = true;
 		gameOverScene.enabled = false;
+		getPointShow.text = "";
 	}
 
 	void Awake()
@@ -70,6 +73,7 @@ public class GameDirector : MonoBehaviour
 		{
 			gameOverScene.enabled = true;
 			gameNow = false;
+			getPointShow.text = "GET: " + userPoint + "pt";		
 		}
 	}
 	
